@@ -89,6 +89,7 @@ const App = () => {
             </Select>
           </FormControl>
         </div>
+//         Infobox
         <div className="app__stats">
           <InfoBox
             onClick={(e) => setCasesType("cases")}
@@ -114,6 +115,8 @@ const App = () => {
             total={numeral(countryInfo.deaths).format("0.0a")}
           />
         </div>
+
+//         Map
         <Map
           countries={mapCountries}
           casesType={casesType}
